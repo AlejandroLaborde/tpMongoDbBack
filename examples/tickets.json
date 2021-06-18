@@ -1,0 +1,157 @@
+{
+	"dateCreate": "2021-05-22T00:00:00",
+	"type": "desperfecto",
+	"state": "open",
+	"usuarioCreacion": {
+        "apellido":"Laborde",
+        "nombre":"Alejandro",
+        "dni":38834224,
+        "esEmpleado":true,
+        "domicilios":[
+                {
+                   "direccion":"Blas parera 941",
+                   "tipo": "cliente",
+                   "geometry": 
+                   {
+                      "type": "Point",
+                      "coordinates": [
+                         -58.396496772766106,
+                         -34.837441938535456
+                      ]
+                   },
+                   "localidad":
+                   {
+                      "codigo":"1852",
+                      "nombre":"Burzaco"
+                   }
+             }
+        ],
+        "planes":[{
+          "tipo": "normal",
+          "dateCreated": "2021-06-22T00:00:00",
+          "dateUpdate": "2021-06-22T00:00:00",
+          "cantCanales": 2,
+          "canales": [
+              "canal1",
+              "canal2"
+          ],
+          "vigente": true
+         }],
+         "central":{
+            "direccion":"Av. Bartolome Mitre 800",
+            "tipo": "Atencion al Cliente",
+            "geometry": 
+            {
+                "type": "Point",
+                "coordinates": [
+                    -58.36480379104614,
+                    -34.662510905200485
+                ]
+            },
+            "localidad":
+            {
+                "codigo":"1852",
+                "nombre":"Burzaco"
+            }
+        }
+      
+    },
+	"derivaciones": [
+		{
+			"date": "2021-05-22T00:00:00",
+			"usuario":{
+				"apellido":"Juan",
+				"nombre":"Perez",
+				"dni":38834443,
+				"esEmpleado":true,
+				"domicilios":[
+						{
+						   "direccion":"Blas parera 941",
+						   "tipo": "cliente",
+						   "geometry": 
+						   {
+							  "type": "Point",
+							  "coordinates": [
+								 -58.396496772766106,
+								 -34.837441938535456
+							  ]
+						   },
+						   "localidad":
+						   {
+							  "codigo":"1852",
+							  "nombre":"Burzaco"
+						   }
+					 }
+				],
+				 "central":{
+					"direccion":"Av. Bartolome Mitre 800",
+					"tipo": "Atencion al Cliente",
+					"geometry": 
+					{
+						"type": "Point",
+						"coordinates": [
+							-58.36480379104614,
+							-34.662510905200485
+						]
+					},
+					"localidad":
+					{
+						"codigo":"1852",
+						"nombre":"Burzaco"
+					}
+				}
+			  
+			},
+			"posibleSolution": "descripcion de la solucion aca",
+			"finalResolution": false
+		},
+		{
+			"date": "2021-05-22T00:00:00",
+			"usuario":{
+				"apellido":"Daniel",
+				"nombre":"Alejandro",
+				"dni":38834234,
+				"esEmpleado":true,
+				"domicilios":[
+						{
+						   "direccion":"Blas parera 941",
+						   "tipo": "cliente",
+						   "geometry": 
+						   {
+							  "type": "Point",
+							  "coordinates": [
+								 -58.396496772766106,
+								 -34.837441938535456
+							  ]
+						   },
+						   "localidad":
+						   {
+							  "codigo":"1852",
+							  "nombre":"Burzaco"
+						   }
+					 }
+				],
+				 "central":{
+					"direccion":"Av. Bartolome Mitre 800",
+					"tipo": "Atencion al Cliente",
+					"geometry": 
+					{
+						"type": "Point",
+						"coordinates": [
+							-58.36480379104614,
+							-34.662510905200485
+						]
+					},
+					"localidad":
+					{
+						"codigo":"1852",
+						"nombre":"Burzaco"
+					}
+				}
+			  
+			},
+			"posibleSolution": "descripcion de la solucion aca",
+			"finalResolution": true
+		}
+	]
+}

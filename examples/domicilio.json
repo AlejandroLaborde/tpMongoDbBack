@@ -1,0 +1,17 @@
+{
+    "direccion":"Blas parera 941",
+    "tipo": "cliente",
+    "geometry": 
+    {
+        "type": "Point",
+        "coordinates": [
+            -58.396496772766106,
+            -34.837441938535456
+        ]
+    },
+    "localidad":
+    {
+        "codigo":"1852",
+        "nombre":"Burzaco"
+    }
+}

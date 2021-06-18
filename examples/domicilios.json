@@ -1,0 +1,87 @@
+[
+    {
+        "direccion":"Blas parera 941",
+        "tipo": "cliente",
+        "geometry": 
+        {
+            "type": "Point",
+            "coordinates": [
+                -58.396496772766106,
+                -34.837441938535456
+            ]
+        },
+        "localidad":
+        {
+            "codigo":"1852",
+            "nombre":"Burzaco"
+        }
+    },
+    {
+        "direccion":"Caracas 91",
+        "tipo": "cliente",
+        "geometry": 
+        {
+            "type": "Point",
+            "coordinates": [
+                -58.46142768859863,
+                -34.62793756966829
+            ]
+        },
+        "localidad":
+        {
+            "codigo":"1406",
+            "nombre":"Flores"
+        }
+    },
+    {
+        "direccion":"Adrogue 101",
+        "tipo": "cliente",
+        "geometry": 
+        {
+            "type": "Point",
+            "coordinates": [
+                -58.43284606933594,
+                -34.79533863309322
+            ]
+        },
+        "localidad":
+        {
+            "codigo":"1836",
+            "nombre":"Temperley"
+        }
+    },
+    {
+        "direccion":"Italia 465",
+        "tipo": "cliente",
+        "geometry": 
+        {
+            "type": "Point",
+            "coordinates": [
+                -58.395509719848626,
+                -34.833197350606106
+            ]
+        },
+        "localidad":
+        {
+            "codigo":"1852",
+            "nombre":"Burzaco"
+        }
+    },
+    {
+        "direccion":"Av. Bartolome Mitre 800",
+        "tipo": "Atencion al Cliente",
+        "geometry": 
+        {
+            "type": "Point",
+            "coordinates": [
+                -58.36480379104614,
+                -34.662510905200485
+            ]
+        },
+        "localidad":
+        {
+            "codigo":"1852",
+            "nombre":"Burzaco"
+        }
+    }
+]

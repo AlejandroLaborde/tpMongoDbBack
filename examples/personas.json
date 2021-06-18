@@ -1,0 +1,151 @@
+[
+    {
+        "apellido":"Laborde",
+        "nombre":"Alejandro",
+        "dni":38834224,
+        "esEmpleado":true,
+        "domicilios":[
+                {
+                   "direccion":"Blas parera 941",
+                   "tipo": "cliente",
+                   "geometry": 
+                   {
+                      "type": "Point",
+                      "coordinates": [
+                         -58.396496772766106,
+                         -34.837441938535456
+                      ]
+                   },
+                   "localidad":
+                   {
+                      "codigo":"1852",
+                      "nombre":"Burzaco"
+                   }
+             }
+        ],
+        "planes":[{
+          "tipo": "normal",
+          "dateCreated": "2021-06-22T00:00:00",
+          "dateUpdate": "2021-06-22T00:00:00",
+          "cantCanales": 2,
+          "canales": [
+              "canal1",
+              "canal2"
+          ],
+          "vigente": true
+         }],
+         "central":{
+            "direccion":"Av. Bartolome Mitre 800",
+            "tipo": "Atencion al Cliente",
+            "geometry": 
+            {
+                "type": "Point",
+                "coordinates": [
+                    -58.36480379104614,
+                    -34.662510905200485
+                ]
+            },
+            "localidad":
+            {
+                "codigo":"1852",
+                "nombre":"Burzaco"
+            }
+        }
+      
+    },
+
+    {
+        "apellido":"Laborde",
+        "nombre":"Gustavo",
+        "dni":38834222,
+        "esEmpleado":false,
+        "domicilios":[
+                {
+                   "direccion":"Blas parera 941",
+                   "tipo": "cliente",
+                   "geometry": 
+                   {
+                      "type": "Point",
+                      "coordinates": [
+                         -58.396496772766106,
+                         -34.837441938535456
+                      ]
+                   },
+                   "localidad":
+                   {
+                      "codigo":"1852",
+                      "nombre":"Burzaco"
+                   }
+             }
+        ],
+        "planes":[ {
+            "tipo": "SuperPack1",
+            "dateCreated": "2021-06-22T00:00:00",
+            "dateUpdate": "2021-06-22T00:00:00",
+            "cantCanales":3,
+            "canales": [
+                "canal1",
+                "canal2",
+                "canal3"
+            ],
+            "vigente": false
+        },
+        {
+            "tipo": "SuperPackFull",
+            "dateCreated": "2021-06-22T00:00:00",
+            "dateUpdate": "2021-06-22T00:00:00",
+            "cantCanales":3,
+            "canales": [
+                "canal1",
+                "canal2",
+                "canal3"
+            ],
+            "vigente": true
+        }]
+    },
+    {
+        "apellido":"Daniel",
+        "nombre":"Alejandro",
+        "dni":38834234,
+        "esEmpleado":true,
+        "domicilios":[
+                {
+                   "direccion":"Blas parera 941",
+                   "tipo": "cliente",
+                   "geometry": 
+                   {
+                      "type": "Point",
+                      "coordinates": [
+                         -58.396496772766106,
+                         -34.837441938535456
+                      ]
+                   },
+                   "localidad":
+                   {
+                      "codigo":"1852",
+                      "nombre":"Burzaco"
+                   }
+             }
+        ],
+         "central":{
+            "direccion":"Av. Bartolome Mitre 800",
+            "tipo": "Atencion al Cliente",
+            "geometry": 
+            {
+                "type": "Point",
+                "coordinates": [
+                    -58.36480379104614,
+                    -34.662510905200485
+                ]
+            },
+            "localidad":
+            {
+                "codigo":"1852",
+                "nombre":"Burzaco"
+            }
+        }
+      
+    }
+    
+    
+]
