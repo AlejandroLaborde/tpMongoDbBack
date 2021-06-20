@@ -1,7 +1,6 @@
 const db = require('../models/db');
 
 // Retrieve all users from the database.
-
 exports.findAllTickets = (req, res) => {
     const collection = db.getInstance().collection('tickets');
     const dateFrom = req.query.dateFrom;
@@ -291,4 +290,70 @@ exports.findEmpleadoTicket = (req, res) => {
                     err.message || "Some error occurred while retrieving users."
             });
         });
+};
+
+
+exports.obtenerZonasCreacionTickets = (req, res) => {
+    
+    const collection = db.getInstance().collection('tickets');
+    collection.aggregate([
+        {$match:query},
+        { $addFields: { direccion: { $first: "$usuarioCreacion.domicilios" } } },
+        {$project: {type: 1, localidad:"$direccion.localidad"}}
+        ]).toArray().then(data => {
+          res.send(data);
+        })
+        .catch(err => {
+            res.status(500).send({
+                message:
+                    err.message || "Some error occurred while retrieving users."
+            });
+        });
+};
+//Cliente mas cercano a el Atencion al Cliente
+
+exports.clienteMasCercanoAtencionCliente = (req, res) => {
+    const collection = db.getInstance().collection('tickets');
+
+    collection.createIndex({"usuarioCreacion.domicilios.geometry" : "2dsphere"})
+    var atencion = collection.aggregate([
+		{
+			$match:{ "derivaciones.usuario.central.tipo": "Atencion al Cliente" }
+		},
+		{
+			$project : {centro:"$derivaciones.usuario.central"}
+		},
+		{
+			$unwind: "$centro"
+		},
+		{ $limit : 1 }
+	]).toArray()
+
+    atencion.then(data=>{
+        console.log(data[0].centro)
+        collection.aggregate([ 
+            {
+                $geoNear: {
+                    near: data[0].centro.geometry,
+                    distanceField: "dist.calculated",
+                }
+            },
+            {
+                $project:{cliente:"$usuarioCreacion"}
+            },
+            { $limit : 1 }
+        ]
+            ).toArray().then(data => {
+                res.send(data);
+            })
+            .catch(err => {
+                res.status(500).send({
+                    message:
+                        err.message || "Some error occurred while retrieving users."
+                });
+            });
+
+
+    })
+    
 };

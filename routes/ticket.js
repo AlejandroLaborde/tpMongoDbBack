@@ -41,6 +41,7 @@ router.get('/findClienteTicketsPendientes', UserController.findClienteTicketsPen
 //Quien Es empleado y genero ticket
 router.get('/findEmpleadoTicket', UserController.findEmpleadoTicket);
 
+router.get('/clienteMasCercanoACentroAtencion', UserController.clienteMasCercanoAtencionCliente);
 //insert ticket
 router.post('/insert', UserController.insertOneTicket);
 
